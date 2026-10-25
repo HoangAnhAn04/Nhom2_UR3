@@ -1,0 +1,28 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "robot_timeout_s": 5
+  },
+  "image": { "width": 640, "height": 480 },
+  "tray": {
+    "slots": {
+      "1": [0, 0, 320, 240],
+      "2": [320, 0, 640, 240],
+      "3": [0, 240, 320, 480],
+      "4": [320, 240, 640, 480]
+    },
+    "names": { "1": "A1", "2": "A2", "3": "B1", "4": "C1" },
+    "expected": { "1": "A", "2": "A", "3": "B", "4": "C" },
+    "allowed": { "A": [1, 2], "B": [3], "C": [4] },
+    "order": [1, 2, 3, 4]
+  },
+  "thresholds": {
+    "conf_low": 0.25,
+    "conf_min": 0.5,
+    "nms_iou": 0.5,
+    "boundary_margin_px": 15
+  },
+  "model": { "weights": "weights/best.pt", "imgsz": 640 },
+  "log_dir": "logs"
+}
