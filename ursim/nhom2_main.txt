@@ -1,0 +1,146 @@
+ Program
+   Robot Program
+     ip≔"192.168.61.1"
+     n_read≔0
+     rid≔0
+     ok≔False
+     okk≔False
+     st≔0
+     cls≔0
+     slot≔0
+     conf≔0.0
+     n_dat≔0
+     n_khay_xong≔0
+     n_cho≔0
+     n_loi≔0
+     retries≔0
+     chay≔True
+     Set DO[0]=Off
+     Set DO[1]=Off
+     Set DO[2]=Off
+     MoveJ
+       home
+        okk = socket_open(ip, 5000, "py")
+     Popup: okk
+     cid≔0
+     r≔[0,0,0,0,0,0,0,0,0]
+     Loop chay == True
+       cid≔cid + 1
+       ok≔False
+       socket_send_line(str_cat("GET,", to_str(cid)), "py")
+       r = socket_read_ascii_float(8, "py", 5)
+       n_read = r[0]
+       If n_read == 8
+         rid = r[1]
+         If rid == cid
+           st = r[2]
+           cls = r[3]
+           conf = r[7]
+           slot = r[8]
+           ok≔True
+       If ok == False
+         Set DO[1]=On
+         n_loi≔n_loi + 1
+         socket_close("py")
+         Wait: 1.0
+         okk = socket_open(ip, 5000, "py")
+         retries≔retries + 1
+         If retries >= 5
+           Popup: Mat ket noi, kiem tra bridge
+           chay≔ False 
+       ElseIf st == 1 and conf >= 0.5 and ((cls==1 and (slot==1 or slot==2)) or (cls==2 and slot==3) or (cls==3 and slot==4))
+         Set DO[1]=Off
+         retries≔0
+         If cls == 1
+           Call Lay_A
+         ElseIf cls == 2
+           Call Lay_B
+         ElseIf cls == 3
+           Call Lay_C
+         Call Dat_VaoO
+         socket_send_line(str_cat("DONE,", to_str(cid)), "py")
+         n_dat≔n_dat + 1
+         Set DO[2]=On
+         Wait: 0.2
+         Set DO[2]=Off
+       ElseIf st == 3
+         Set DO[1]=Off
+         socket_send_line(str_cat("DONE,", to_str(cid)), "py")
+         n_khay_xong≔n_khay_xong + 1
+         chay≔False
+       Else
+         n_cho≔n_cho + 1
+         retries≔retries + 1
+         Wait: 0.5
+         If retries >= 3
+           Popup: Can nguoi van hanh kiem tra
+           chay≔ False 
+     Popup
+     Popup
+     Popup
+     Popup
+     socket_close("py")
+   Lay_A
+     MoveJ
+       Cap_A_Approach
+     MoveL
+       Cap_A
+     Set DO[0]=On
+     Wait: 0.5
+     MoveL
+       Cap_A_Approach
+   Lay_B
+     MoveJ
+       Cap_B_Approach
+     MoveL
+       Cap_B
+     Set DO[0]=On
+     Wait: 0.5
+     MoveL
+       Cap_B_Approach
+   Lay_C
+     MoveJ
+       Cap_C_Approach
+     MoveL
+       Cap_C
+     Set DO[0]=On
+     Wait: 0.5
+     MoveL
+       Cap_C_Approach
+   Dat_VaoO
+     If slot == 1
+       MoveJ
+         O1_Approach
+       MoveL
+         O1
+       Set DO[0]=Off
+       Wait: 0.5
+       MoveL
+         O1_Approach
+     ElseIf slot == 2
+       MoveJ
+         O2_Approach
+       MoveL
+         O2
+       Set DO[0]=Off
+       Wait: 0.5
+       MoveL
+         O2_Approach
+     ElseIf slot == 3
+       MoveJ
+         O3_Approach
+       MoveL
+         O3
+       Set DO[0]=Off
+       Wait: 0.5
+       MoveL
+         O3_Approach
+     ElseIf slot == 4
+       MoveJ
+         O4_Approach
+       MoveL
+         O4
+       Set DO[0]=Off
+       Wait: 0.5
+       MoveL
+         O4_Approach

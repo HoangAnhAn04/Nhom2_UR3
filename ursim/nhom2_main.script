@@ -1,0 +1,316 @@
+def nhom2_main():
+  set_standard_analog_input_domain(0, 1)
+  set_standard_analog_input_domain(1, 1)
+  set_tool_analog_input_domain(0, 1)
+  set_tool_analog_input_domain(1, 1)
+  set_analog_outputdomain(0, 0)
+  set_analog_outputdomain(1, 0)
+  set_input_actions_to_default()
+  step_count_2c01e4b9_04ff_4b33_9d28_b2ded096517e = 0.0
+  thread Step_Counter_Thread_a72f5f95_8849_48f7_8e64_850bb2db9181():
+    while (True):
+      step_count_2c01e4b9_04ff_4b33_9d28_b2ded096517e = step_count_2c01e4b9_04ff_4b33_9d28_b2ded096517e + 1.0
+      sync()
+    end
+  end
+  run Step_Counter_Thread_a72f5f95_8849_48f7_8e64_850bb2db9181()
+  set_gravity([0.0, 0.0, 9.82])
+  set_tcp(p[0.0,0.0,0.1,0.0,0.0,0.0])
+  set_payload(0.67)
+  set_safety_mode_transition_hardness(1)
+  set_tool_voltage(0)
+  def Lay_A():
+    $ 82 "Lay_A" "noBreak"
+    $ 83 "MoveJ"
+    $ 84 "Cap_A_Approach" "breakAfter"
+    movej(get_inverse_kin(p[-.240000000075, -.300000030108, .119999985740, -3.141185396902, .000000289128, -.000000254787], qnear=[0.5994493365287781, -1.2191832701312464, 1.597288966178894, -1.948672119771139, -1.5711324850665491, 2.170245885848999]), a=1.3962634015954636, v=1.0471975511965976)
+    $ 85 "MoveL"
+    $ 86 "Cap_A" "breakAfter"
+    movel(p[-.240000142208, -.299999960151, .019999977077, -3.141185343642, .000000448036, -.000000006339], a=1.2, v=0.25)
+    $ 87 "Set DO[0]=On"
+    set_standard_digital_out(0, True)
+    $ 88 "Wait: 0.5"
+    sleep(0.5)
+    $ 89 "MoveL"
+    $ 90 "Cap_A_Approach" "breakAfter"
+    movel(p[-.240000000075, -.300000030108, .119999985740, -3.141185396902, .000000289128, -.000000254787], a=1.2, v=0.25)
+  end
+  def Lay_B():
+    $ 91 "Lay_B" "noBreak"
+    $ 92 "MoveJ"
+    $ 93 "Cap_B_Approach" "breakAfter"
+    movej(get_inverse_kin(p[-.300000005818, -.300000047026, .119999949539, -3.141185420952, .000000200178, -.000000311390], qnear=[0.5175471305847168, -1.056652847920553, 1.3523004055023193, -1.8662422339068812, -1.5711501280414026, 2.088343620300293]), a=1.3962634015954636, v=1.0471975511965976)
+    $ 94 "MoveL"
+    $ 95 "Cap_B" "breakAfter"
+    movel(p[-.299999932252, -.299999933326, .019999971367, -3.141185141481, .000000436679, -.000000197499], a=1.2, v=0.25)
+    $ 96 "Set DO[0]=On"
+    set_standard_digital_out(0, True)
+    $ 97 "Wait: 0.5"
+    sleep(0.5)
+    $ 98 "MoveL"
+    $ 99 "Cap_B_Approach" "breakAfter"
+    movel(p[-.300000005818, -.300000047026, .119999949539, -3.141185420952, .000000200178, -.000000311390], a=1.2, v=0.25)
+  end
+  def Lay_C():
+    $ 100 "Lay_C" "noBreak"
+    $ 101 "MoveJ"
+    $ 102 "Cap_C_Approach" "breakAfter"
+    movej(get_inverse_kin(p[-.359999988174, -.299999978367, .119999963382, -3.141185308394, .000000345322, -.000000359250], qnear=[0.45277729630470276, -0.8587592283831995, 1.020950198173523, -1.7328088919269007, -1.571162525807516, 2.023573875427246]), a=1.3962634015954636, v=1.0471975511965976)
+    $ 103 "MoveL"
+    $ 104 "Cap_C" "breakAfter"
+    movel(p[-.359999967381, -.299999846576, .019999944478, -3.141184895160, .000000430435, -.000000509059], a=1.2, v=0.25)
+    $ 105 "Set DO[0]=On"
+    set_standard_digital_out(0, True)
+    $ 106 "Wait: 0.5"
+    sleep(0.5)
+    $ 107 "MoveL"
+    $ 108 "Cap_C_Approach" "breakAfter"
+    movel(p[-.359999988174, -.299999978367, .119999963382, -3.141185308394, .000000345322, -.000000359250], a=1.2, v=0.25)
+  end
+  def Dat_VaoO():
+    $ 109 "Dat_VaoO" "noBreak"
+    $ 110 "If slot == 1"
+    if (slot == 1):
+      $ 111 "MoveJ"
+      $ 112 "O1_Approach" "breakAfter"
+      movej(get_inverse_kin(p[-.330000029254, -.120000004130, .120000016762, -3.141185335918, .000000402369, .000000013055], qnear=[0.02330961264669895, -1.3514068762408655, 1.7757976055145264, -1.9951775709735315, -1.5712035338031214, 1.5941061973571777]), a=1.3962634015954636, v=1.0471975511965976)
+      $ 113 "MoveL"
+      $ 114 "O1" "breakAfter"
+      movel(p[-.330000063529, -.120000052897, .020000047096, -3.141185101559, .000000429085, -.000000070979], a=1.2, v=0.25)
+      $ 115 "Set DO[0]=Off"
+      set_standard_digital_out(0, False)
+      $ 116 "Wait: 0.5"
+      sleep(0.5)
+      $ 117 "MoveL"
+      $ 118 "O1_Approach" "breakAfter"
+      movel(p[-.330000029254, -.120000004130, .120000016762, -3.141185335918, .000000402369, .000000013055], a=1.2, v=0.25)
+    else:
+      $ 119 "ElseIf slot == 2"
+      if (slot == 2):
+        $ 120 "MoveJ"
+        $ 121 "O2_Approach" "breakAfter"
+        movej(get_inverse_kin(p[-.270000013774, -.119999994534, .120000090380, -3.141185287082, .000000313995, .000000295417], qnear=[0.028431853279471397, -1.58575946489443, 2.0402705669403076, -2.0252960363971155, -1.5712035338031214, 1.5992283821105957]), a=1.3962634015954636, v=1.0471975511965976)
+        $ 122 "MoveL"
+        $ 123 "O2" "breakAfter"
+        movel(p[-.270000017482, -.120000096604, .020000071309, -3.141185210778, .000000427598, .000000061831], a=1.2, v=0.25)
+        $ 124 "Set DO[0]=Off"
+        set_standard_digital_out(0, False)
+        $ 125 "Wait: 0.5"
+        sleep(0.5)
+        $ 126 "MoveL"
+        $ 127 "O2_Approach" "breakAfter"
+        movel(p[-.270000013774, -.119999994534, .120000090380, -3.141185287082, .000000313995, .000000295417], a=1.2, v=0.25)
+      else:
+        $ 128 "ElseIf slot == 3"
+        if (slot == 3):
+          $ 129 "MoveJ"
+          $ 130 "O3_Approach" "breakAfter"
+          movej(get_inverse_kin(p[-.329999967455, -.179999997356, .120000116604, -3.141185297898, .000000348364, .000000191411], qnear=[0.19602684676647186, -1.2523005644427698, 1.643894076347351, -1.9623106161700647, -1.5711959044085901, 1.766823410987854]), a=1.3962634015954636, v=1.0471975511965976)
+          $ 131 "MoveL"
+          $ 132 "O3" "breakAfter"
+          movel(p[-.330000032909, -.180000028127, .020000147990, -3.141185512542, .000000427664, .000000397905], a=1.2, v=0.25)
+          $ 133 "Set DO[0]=Off"
+          set_standard_digital_out(0, False)
+          $ 134 "Wait: 0.5"
+          sleep(0.5)
+          $ 135 "MoveL"
+          $ 136 "O3_Approach" "breakAfter"
+          movel(p[-.329999967455, -.179999997356, .120000116604, -3.141185297898, .000000348364, .000000191411], a=1.2, v=0.25)
+        else:
+          $ 137 "ElseIf slot == 4"
+          if (slot == 4):
+            $ 138 "MoveJ"
+            $ 139 "O4_Approach" "breakAfter"
+            movej(get_inverse_kin(p[-.269999982803, -.179999989930, .120000055811, -3.141185221927, .000000250097, -.000000149347], qnear=[0.234694704413414, -1.4605091253863733, 1.9074137210845947, -2.0176060835467737, -1.5711925665484827, 1.8054912090301514]), a=1.3962634015954636, v=1.0471975511965976)
+            $ 140 "MoveL"
+            $ 141 "O4" "breakAfter"
+            movel(p[-.270000027232, -.180000166791, .020000258036, -3.141185932737, .000000056391, .000000935830], a=1.2, v=0.25)
+            $ 142 "Set DO[0]=Off"
+            set_standard_digital_out(0, False)
+            $ 143 "Wait: 0.5"
+            sleep(0.5)
+            $ 144 "MoveL"
+            $ 145 "O4_Approach" "breakAfter"
+            movel(p[-.269999982803, -.179999989930, .120000055811, -3.141185221927, .000000250097, -.000000149347], a=1.2, v=0.25)
+          end
+        end
+      end
+    end
+  end
+  $ 1 "Robot Program"
+  $ 2 "ip≔'192.168.61.1'"
+  global ip="192.168.61.1"
+  $ 3 "n_read≔0"
+  global n_read=0
+  $ 4 "rid≔0"
+  global rid=0
+  $ 5 "ok≔False"
+  global ok=False
+  $ 6 "okk≔False"
+  global okk=False
+  $ 7 "st≔0"
+  global st=0
+  $ 8 "cls≔0"
+  global cls=0
+  $ 9 "slot≔0"
+  global slot=0
+  $ 10 "conf≔0.0"
+  global conf=0.0
+  $ 11 "n_dat≔0"
+  global n_dat=0
+  $ 12 "n_khay_xong≔0"
+  global n_khay_xong=0
+  $ 13 "n_cho≔0"
+  global n_cho=0
+  $ 14 "n_loi≔0"
+  global n_loi=0
+  $ 15 "retries≔0"
+  global retries=0
+  $ 16 "chay≔True"
+  global chay=True
+  $ 17 "Set DO[0]=Off"
+  set_standard_digital_out(0, False)
+  $ 18 "Set DO[1]=Off"
+  set_standard_digital_out(1, False)
+  $ 19 "Set DO[2]=Off"
+  set_standard_digital_out(2, False)
+  $ 20 "MoveJ"
+  $ 21 "home" "breakAfter"
+  movej(get_inverse_kin(p[-.299999989697, -.149999963221, .299999993011, -3.141185254903, .000000146784, -.000000113146], qnear=[0.12231427431106567, -1.4182961622821253, 0.9868292808532715, -1.1392796675311487, -1.5712006727801722, 1.693110704421997]), a=1.3962634015954636, v=1.0471975511965976)
+  $ 22 "   okk = socket_open(ip, 5000, 'py')"
+     okk = socket_open(ip, 5000, "py")
+  $ 23 "Popup: okk"
+  popup(str_cat("",okk), "Message", False, False, blocking=True)
+  $ 24 "cid≔0"
+  global cid=0
+  $ 25 "r≔[0,0,0,0,0,0,0,0,0]"
+  global r=[0,0,0,0,0,0,0,0,0]
+  $ 26 "Loop chay == True"
+  while (chay == True):
+    $ 27 "cid≔cid + 1"
+    global cid=cid + 1
+    $ 28 "ok≔False"
+    global ok=False
+    $ 29 "socket_send_line(str_cat('GET,', to_str(cid)), 'py')"
+    socket_send_line(str_cat("GET,", to_str(cid)), "py")
+    $ 30 "r = socket_read_ascii_float(8, 'py', 5)"
+    r = socket_read_ascii_float(8, "py", 5)
+    $ 31 "n_read = r[0]"
+    n_read = r[0]
+    $ 32 "If n_read == 8"
+    if (n_read == 8):
+      $ 33 "rid = r[1]"
+      rid = r[1]
+      $ 34 "If rid == cid"
+      if (rid == cid):
+        $ 35 "st = r[2]"
+        st = r[2]
+        $ 36 "cls = r[3]"
+        cls = r[3]
+        $ 37 "conf = r[7]"
+        conf = r[7]
+        $ 38 "slot = r[8]"
+        slot = r[8]
+        $ 39 "ok≔True"
+        global ok=True
+      end
+    end
+    $ 40 "If ok == False"
+    if (ok == False):
+      $ 41 "Set DO[1]=On"
+      set_standard_digital_out(1, True)
+      $ 42 "n_loi≔n_loi + 1"
+      global n_loi=n_loi + 1
+      $ 43 "socket_close('py')"
+      socket_close("py")
+      $ 44 "Wait: 1.0"
+      sleep(1.0)
+      $ 45 "okk = socket_open(ip, 5000, 'py')"
+      okk = socket_open(ip, 5000, "py")
+      $ 46 "retries≔retries + 1"
+      global retries=retries + 1
+      $ 47 "If retries >= 5"
+      if (retries >= 5):
+        $ 48 "Popup: Mat ket noi, kiem tra bridge"
+        popup("Mat ket noi, kiem tra bridge", "Message", False, False, blocking=True)
+        $ 49 "chay≔ False "
+        global chay=  False  
+      end
+    else:
+      $ 50 "ElseIf st == 1 and conf >= 0.5 and ((cls==1 and (slot==1 or slot==2)) or (cls==2 and slot==3) or (cls==3 and slot==4))"
+      if (st == 1 and conf >= 0.5 and ((cls==1 and (slot==1 or slot==2)) or (cls==2 and slot==3) or (cls==3 and slot==4))):
+        $ 51 "Set DO[1]=Off"
+        set_standard_digital_out(1, False)
+        $ 52 "retries≔0"
+        global retries=0
+        $ 53 "If cls == 1"
+        if (cls == 1):
+          $ 54 "Call Lay_A"
+          Lay_A()
+        else:
+          $ 55 "ElseIf cls == 2"
+          if (cls == 2):
+            $ 56 "Call Lay_B"
+            Lay_B()
+          else:
+            $ 57 "ElseIf cls == 3"
+            if (cls == 3):
+              $ 58 "Call Lay_C"
+              Lay_C()
+            end
+          end
+        end
+        $ 59 "Call Dat_VaoO"
+        Dat_VaoO()
+        $ 60 "socket_send_line(str_cat('DONE,', to_str(cid)), 'py')"
+        socket_send_line(str_cat("DONE,", to_str(cid)), "py")
+        $ 61 "n_dat≔n_dat + 1"
+        global n_dat=n_dat + 1
+        $ 62 "Set DO[2]=On"
+        set_standard_digital_out(2, True)
+        $ 63 "Wait: 0.2"
+        sleep(0.2)
+        $ 64 "Set DO[2]=Off"
+        set_standard_digital_out(2, False)
+      else:
+        $ 65 "ElseIf st == 3"
+        if (st == 3):
+          $ 66 "Set DO[1]=Off"
+          set_standard_digital_out(1, False)
+          $ 67 "socket_send_line(str_cat('DONE,', to_str(cid)), 'py')"
+          socket_send_line(str_cat("DONE,", to_str(cid)), "py")
+          $ 68 "n_khay_xong≔n_khay_xong + 1"
+          global n_khay_xong=n_khay_xong + 1
+          $ 69 "chay≔False"
+          global chay=False
+        else:
+          $ 70 "Else" "noBreak"
+          $ 71 "n_cho≔n_cho + 1"
+          global n_cho=n_cho + 1
+          $ 72 "retries≔retries + 1"
+          global retries=retries + 1
+          $ 73 "Wait: 0.5"
+          sleep(0.5)
+          $ 74 "If retries >= 3"
+          if (retries >= 3):
+            $ 75 "Popup: Can nguoi van hanh kiem tra"
+            popup("Can nguoi van hanh kiem tra", "Message", False, False, blocking=False)
+            halt
+            $ 76 "chay≔ False "
+            global chay=  False  
+          end
+        end
+      end
+    end
+  end
+  $ 77 "Popup"
+  popup(str_cat("",n_dat), "Message", False, False, blocking=True)
+  $ 78 "Popup"
+  popup(str_cat("",n_khay_xong), "Message", False, False, blocking=True)
+  $ 79 "Popup"
+  popup(str_cat("",n_cho), "Message", False, False, blocking=True)
+  $ 80 "Popup"
+  popup(str_cat("",n_loi), "Message", False, False, blocking=True)
+  $ 81 "socket_close('py')"
+  socket_close("py")
+end
