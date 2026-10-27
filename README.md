@@ -834,21 +834,21 @@ Chạy thử **từng SubProgram một mình** (node Call), tốc độ thấp: 
 
 Tạo bằng **Assignment** ở đầu chương trình:
 
-| Biến                | Giá trị đầu                     | Ý nghĩa                         |
-| ------------------- | ------------------------------- | ------------------------------- |
-| `ip`                | `"192.168.61.1"` (sửa theo máy) | IP máy chạy Python              |
-| `cid`               | 0                               | mã chu kỳ, tăng mỗi `GET` mới   |
-| `r`                 | `[0,0,0,0,0,0,0,0,0]`           | kết quả đọc socket              |
-| `n_read`, `rid`     | 0                               | số phần tử đọc được, id nhận về |
-| `ok`                | False                           | gói hợp lệ                      |
-| `st`, `cls`, `slot` | 0                               | status, class, slot nhận về     |
-| `conf`              | 0.0                             | confidence                      |
-| `n_dat`             | 0                               | số linh kiện đã đặt xong        |
-| `n_khay_xong`       | 0                               | số khay hoàn tất                |
-| `n_cho`             | 0                               | số lần chờ/ngoại lệ             |
-| `n_loi`             | 0                               | số lần lỗi quy trình/kết nối    |
-| `retries`           | 0                               | số lần status 2/0/4 liên tiếp   |
-| `chay`              | True                            | cờ chạy vòng lặp                |
+| Biến                | Giá trị đầu                     | Ý nghĩa                                                                                   |
+| ------------------- | ------------------------------- | ----------------------------------------------------------------------------------------- |
+| `ip`                | `"192.168.61.1"` (sửa theo máy) | IP máy chạy Python                                                                        |
+| `cid`               | 0                               | mã chu kỳ, tăng mỗi `GET` mới                                                             |
+| `r`                 | `[0,0,0,0,0,0,0,0,0]`           | kết quả đọc socket                                                                        |
+| `n_read`, `rid`     | 0                               | số phần tử đọc được, id nhận về                                                           |
+| `ok`                | False                           | gói hợp lệ                                                                                |
+| `st`, `cls`, `slot` | 0                               | status, class, slot nhận về                                                               |
+| `conf`              | 0.0                             | confidence                                                                                |
+| `n_dat`             | 0                               | số linh kiện đã đặt xong                                                                  |
+| `n_khay_xong`       | 0                               | số khay hoàn tất                                                                          |
+| `n_cho`             | 0                               | số lần chờ/ngoại lệ                                                                       |
+| `n_loi`             | 0                               | số lần lỗi quy trình/kết nối                                                              |
+| `retries`           | 0                               | số lần chờ hoặc lỗi liên tiếp. Mức dừng khác nhau: 3 với chờ kiểm tra, 5 với mất kết nối. |
+| `chay`              | True                            | cờ chạy vòng lặp                                                                          |
 
 Đầu chương trình: `Set DO0, DO1, DO2 = Off` và `MoveJ Home`.
 
@@ -875,6 +875,9 @@ Loop  chay == True
   If ok == False
      Set DO1 = On ; n_loi := n_loi + 1
      Script: socket_close("py") ; Wait 1 ; Script: okk = socket_open(ip, 5000, "py")   (mở lại, có giới hạn số lần)
+     If retries >= 5
+           Popup: Mat ket noi, kiem tra bridge
+           chay≔ False
   ElseIf st == 1 and conf >= 0.5 and ((cls==1 and (slot==1 or slot==2)) or (cls==2 and slot==3) or (cls==3 and slot==4))
      Set DO1 = Off ; retries := 0
      If cls == 1: Call Lay_A / ElseIf cls == 2: Call Lay_B / ElseIf cls == 3: Call Lay_C
