@@ -14,6 +14,7 @@
      n_cho≔0
      n_loi≔0
      retries≔0
+     msg≔""
      chay≔True
      Set DO[0]=Off
      Set DO[1]=Off
@@ -75,9 +76,7 @@
          If retries >= 3
            Popup: Can nguoi van hanh kiem tra
            chay≔ False 
-     Popup
-     Popup
-     Popup
+     msg = str_cat("n_dat=", str_cat(to_str(n_dat), str_cat("  n_khay_xong=", str_cat(to_str(n_khay_xong), str_cat("  n_cho=", str_cat(to_str(n_cho), str_cat("  n_loi=", to_str(n_loi))))))))
      Popup
      socket_close("py")
    Lay_A
