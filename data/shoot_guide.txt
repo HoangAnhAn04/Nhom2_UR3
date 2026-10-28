@@ -1,0 +1,480 @@
+﻿HƯỚNG DẪN CHỤP (theo đúng thứ tự bấm máy, không bỏ, không đổi thứ tự)
+Quy ước: 'trống' = ô không có vật; 'A+A' = hai vật A trong cùng một ô; 'B+A' = vật B và vật A trong cùng một ô.
+Mỗi bố trí chụp 3 ảnh liên tiếp: đổi nhẹ ánh sáng/bóng đổ, KHÔNG chạm điện thoại, KHÔNG đổi vị trí vật giữa 3 ảnh.
+
+#000  REF_00.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#001-#003  L001  [sai_o]
+    A1: A | A2: B | B1: A | C1: C
+    - đặt vật ở giữa ô
+
+#004-#006  L002  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#007-#009  L003  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#010-#012  L004  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: trống
+    - KHAY TRỐNG HOÀN TOÀN: không đặt vật nào, chụp 3 ảnh khay trống
+
+#013-#015  L005  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 80% vật ở ô B1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang phải trong ô
+
+#016-#018  L006  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 45 độ
+
+#019-#021  L007  [sai_o]
+    A1: A | A2: A | B1: C | C1: B
+    - xoay vật khoảng 90 độ
+
+#022-#024  L008  [sai_o]
+    A1: B | A2: A | B1: A | C1: C
+    - đặt vật ở giữa ô
+
+#025-#027  L009  [sai_o]
+    A1: B | A2: A | B1: A | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#028-#030  L010  [thieu]
+    A1: trống | A2: A | B1: B | C1: trống
+    - đặt vật lệch về phía dưới trong ô
+
+#031-#033  L011  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 30% vật ở ô A2 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang trái trong ô
+
+#034-#036  L012  [sai_o]
+    A1: C | A2: A | B1: B | C1: A
+    - đặt vật lệch sang phải trong ô
+
+#037-#039  L013  [thieu]
+    A1: A | A2: trống | B1: B | C1: trống
+    - xoay vật khoảng 45 độ
+
+#040-#042  L014  [thieu]
+    A1: A | A2: A | B1: trống | C1: trống
+    - xoay vật khoảng 90 độ
+
+#043-#045  L015  [sai_o]
+    A1: A | A2: C | B1: B | C1: A
+    - đặt vật ở giữa ô
+
+#046-#048  L016  [sai_o]
+    A1: A | A2: A | B1: trống | C1: C
+    - vật B nằm vắt ngang đường kẻ giữa B1 và C1, tâm vật sát đường kẻ
+    - đặt vật lệch về phía trên trong ô
+
+#049-#051  L017  [sai_o]
+    A1: C | A2: A | B1: B | C1: A
+    - đặt vật lệch về phía dưới trong ô
+
+#052-#054  L018  [du_vat]
+    A1: A+A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#055-#057  L019  [sai_o]
+    A1: A | A2: C | B1: B | C1: A
+    - đặt vật lệch sang phải trong ô
+
+#058-#060  L020  [sai_o]
+    A1: B | A2: A | B1: A | C1: C
+    - xoay vật khoảng 45 độ
+
+#061  REF_01.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#062-#064  L021  [thieu]
+    A1: A | A2: A | B1: B | C1: trống
+    - xoay vật khoảng 90 độ
+
+#065-#067  L022  [thieu]
+    A1: A | A2: A | B1: trống | C1: trống
+    - đặt vật ở giữa ô
+
+#068-#070  L023  [du_vat]
+    A1: A | A2: A+A | B1: B | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#071-#073  L024  [du_vat]
+    A1: A | A2: A | B1: B+A | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#074-#076  L025  [sai_o]
+    A1: C | A2: A | B1: B | C1: A
+    - đặt vật lệch sang trái trong ô
+
+#077-#079  L026  [du_vat]
+    A1: A+A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#080-#082  L027  [thieu]
+    A1: trống | A2: trống | B1: B | C1: trống
+    - xoay vật khoảng 45 độ
+
+#083-#085  L028  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#086-#088  L029  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: C
+    - đặt vật ở giữa ô
+
+#089-#091  L030  [thieu]
+    A1: trống | A2: trống | B1: B | C1: trống
+    - đặt vật lệch về phía trên trong ô
+
+#092-#094  L031  [sai_o]
+    A1: A | A2: trống | B1: B | C1: C
+    - vật A đặt ngoài tờ giấy khay, cách mép giấy một đoạn (vẫn trong khung hình)
+    - đặt vật lệch về phía dưới trong ô
+
+#095-#097  L032  [thieu]
+    A1: A | A2: A | B1: trống | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#098-#100  L033  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#101-#103  L034  [sai_o]
+    A1: A | A2: A | B1: trống | C1: C
+    - vật B nằm vắt ngang đường kẻ giữa B1 và C1, tâm vật sát đường kẻ
+    - xoay vật khoảng 45 độ
+
+#104-#106  L035  [sai_o]
+    A1: A | A2: C | B1: B | C1: A
+    - xoay vật khoảng 90 độ
+
+#107-#109  L036  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 30% vật ở ô B1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật ở giữa ô
+
+#110-#112  L037  [sai_o]
+    A1: A | A2: A | B1: trống | C1: C
+    - vật B nằm vắt ngang đường kẻ giữa B1 và C1, tâm vật sát đường kẻ
+    - đặt vật lệch về phía trên trong ô
+
+#113-#115  L038  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#116-#118  L039  [thieu]
+    A1: trống | A2: A | B1: B | C1: trống
+    - đặt vật lệch sang trái trong ô
+
+#119-#121  L040  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 60% vật ở ô A1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang phải trong ô
+
+#122  REF_02.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#123-#125  L041  [sai_o]
+    A1: B | A2: A | B1: A | C1: C
+    - xoay vật khoảng 45 độ
+
+#126-#128  L042  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 30% vật ở ô A1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - xoay vật khoảng 90 độ
+
+#129-#131  L043  [thieu]
+    A1: trống | A2: A | B1: B | C1: C
+    - đặt vật ở giữa ô
+
+#132-#134  L044  [sai_o]
+    A1: A | A2: trống | B1: B | C1: C
+    - vật A đặt ngoài tờ giấy khay, cách mép giấy một đoạn (vẫn trong khung hình)
+    - đặt vật lệch về phía trên trong ô
+
+#135-#137  L045  [du_vat]
+    A1: A | A2: A+A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#138-#140  L046  [du_vat]
+    A1: A+A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#141-#143  L047  [sai_o]
+    A1: trống | A2: trống | B1: B | C1: C
+    - vật A nằm vắt ngang đường kẻ giữa A1 và A2, tâm vật sát đường kẻ
+    - đặt vật lệch sang phải trong ô
+
+#144-#146  L048  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: C
+    - xoay vật khoảng 45 độ
+
+#147-#149  L049  [thieu]
+    A1: trống | A2: trống | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#150-#152  L050  [thieu]
+    A1: trống | A2: A | B1: trống | C1: trống
+    - đặt vật ở giữa ô
+
+#153-#155  L051  [thieu]
+    A1: trống | A2: A | B1: trống | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#156-#158  L052  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#159-#161  L053  [sai_o]
+    A1: A | A2: A | B1: C | C1: B
+    - đặt vật lệch sang trái trong ô
+
+#162-#164  L054  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#165-#167  L055  [thieu]
+    A1: trống | A2: A | B1: trống | C1: trống
+    - xoay vật khoảng 45 độ
+
+#168-#170  L056  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#171-#173  L057  [thieu]
+    A1: A | A2: A | B1: B | C1: trống
+    - đặt vật ở giữa ô
+
+#174-#176  L058  [du_vat]
+    A1: A | A2: A+A | B1: B | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#177-#179  L059  [thieu]
+    A1: A | A2: trống | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#180-#182  L060  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#183  REF_03.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#184-#186  L061  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#187-#189  L062  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 45 độ
+
+#190-#192  L063  [thieu]
+    A1: trống | A2: trống | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#193-#195  L064  [thieu]
+    A1: A | A2: trống | B1: trống | C1: C
+    - đặt vật ở giữa ô
+
+#196-#198  L065  [thieu]
+    A1: A | A2: trống | B1: B | C1: trống
+    - đặt vật lệch về phía trên trong ô
+
+#199-#201  L066  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#202-#204  L067  [thieu]
+    A1: A | A2: A | B1: trống | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#205-#207  L068  [du_vat]
+    A1: A | A2: A | B1: B | C1: C+A
+    - đặt vật lệch sang phải trong ô
+
+#208-#210  L069  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 60% vật ở ô A2 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - xoay vật khoảng 45 độ
+
+#211-#213  L070  [sai_o]
+    A1: trống | A2: trống | B1: B | C1: C
+    - vật A nằm vắt ngang đường kẻ giữa A1 và A2, tâm vật sát đường kẻ
+    - xoay vật khoảng 90 độ
+
+#214-#216  L071  [du_vat]
+    A1: A | A2: A | B1: B+A | C1: C
+    - đặt vật ở giữa ô
+
+#217-#219  L072  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#220-#222  L073  [du_vat]
+    A1: A | A2: A | B1: B | C1: C+A
+    - đặt vật lệch về phía dưới trong ô
+
+#223-#225  L074  [thieu]
+    A1: A | A2: trống | B1: trống | C1: trống
+    - đặt vật lệch sang trái trong ô
+
+#226-#228  L075  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 80% vật ở ô A1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang phải trong ô
+
+#229-#231  L076  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: trống
+    - KHAY TRỐNG HOÀN TOÀN: không đặt vật nào, chụp 3 ảnh khay trống
+
+#232-#234  L077  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#235-#237  L078  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 30% vật ở ô C1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật ở giữa ô
+
+#238-#240  L079  [du_vat]
+    A1: A | A2: A | B1: B | C1: C+A
+    - đặt vật lệch về phía trên trong ô
+
+#241-#243  L080  [sai_o]
+    A1: trống | A2: trống | B1: B | C1: C
+    - vật A nằm vắt ngang đường kẻ giữa A1 và A2, tâm vật sát đường kẻ
+    - đặt vật lệch về phía dưới trong ô
+
+#244  REF_04.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#245-#247  L081  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 60% vật ở ô B1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang trái trong ô
+
+#248-#250  L082  [sai_o]
+    A1: A | A2: B | B1: A | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#251-#253  L083  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 60% vật ở ô A1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - xoay vật khoảng 45 độ
+
+#254-#256  L084  [du_vat]
+    A1: A | A2: A | B1: B | C1: C+A
+    - xoay vật khoảng 90 độ
+
+#257-#259  L085  [thieu]
+    A1: trống | A2: A | B1: trống | C1: C
+    - đặt vật ở giữa ô
+
+#260-#262  L086  [sai_o]
+    A1: A | A2: C | B1: B | C1: A
+    - đặt vật lệch về phía trên trong ô
+
+#263-#265  L087  [du_vat]
+    A1: A+A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#266-#268  L088  [sai_o]
+    A1: A | A2: B | B1: A | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#269-#271  L089  [sai_o]
+    A1: A | A2: A | B1: C | C1: B
+    - đặt vật lệch sang phải trong ô
+
+#272-#274  L090  [thieu]
+    A1: A | A2: trống | B1: trống | C1: C
+    - xoay vật khoảng 45 độ
+
+#275-#277  L091  [thieu]
+    A1: trống | A2: A | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#278-#280  L092  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 30% vật ở ô A1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật ở giữa ô
+
+#281-#283  L093  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 80% vật ở ô C1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch về phía trên trong ô
+
+#284-#286  L094  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#287-#289  L095  [sai_o]
+    A1: C | A2: A | B1: B | C1: A
+    - đặt vật lệch sang trái trong ô
+
+#290-#292  L096  [sai_o]
+    A1: A | A2: trống | B1: B | C1: C
+    - vật A đặt ngoài tờ giấy khay, cách mép giấy một đoạn (vẫn trong khung hình)
+    - đặt vật lệch sang phải trong ô
+
+#293-#295  L097  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - xoay vật khoảng 45 độ
+
+#296-#298  L098  [sai_o]
+    A1: A | A2: B | B1: A | C1: C
+    - xoay vật khoảng 90 độ
+
+#299-#301  L099  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 80% vật ở ô A2 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật ở giữa ô
+
+#302-#304  L100  [du_vat]
+    A1: A | A2: A | B1: B+A | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#305  REF_05.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh
+
+#306-#308  L101  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#309-#311  L102  [che]
+    A1: A | A2: A | B1: B | C1: C
+    - che khoảng 60% vật ở ô C1 bằng mảnh giấy hoặc tay (vật che nằm trong khung hình)
+    - đặt vật lệch sang trái trong ô
+
+#312-#314  L103  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#315-#317  L104  [thieu]
+    A1: A | A2: trống | B1: trống | C1: trống
+    - xoay vật khoảng 45 độ
+
+#318-#320  L105  [thieu]
+    A1: A | A2: trống | B1: B | C1: C
+    - xoay vật khoảng 90 độ
+
+#321-#323  L106  [thieu]
+    A1: trống | A2: trống | B1: trống | C1: trống
+    - KHAY TRỐNG HOÀN TOÀN: không đặt vật nào, chụp 3 ảnh khay trống
+
+#324-#326  L107  [du_vat]
+    A1: A | A2: A | B1: B+A | C1: C
+    - đặt vật lệch về phía trên trong ô
+
+#327-#329  L108  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch về phía dưới trong ô
+
+#330-#332  L109  [du]
+    A1: A | A2: A | B1: B | C1: C
+    - đặt vật lệch sang trái trong ô
+
+#333-#335  L110  [du_vat]
+    A1: A | A2: A+A | B1: B | C1: C
+    - đặt vật lệch sang phải trong ô
+
+#336  REF_06.jpg  >>> KHAY TRỐNG: lấy hết vật ra khỏi khay, chụp 1 ảnh

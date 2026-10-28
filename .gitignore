@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 logs/*.csv
-data/raw/
 runs/
 .vscode/
+data/phone_dump/
+data/raw/
+data/sheets/
