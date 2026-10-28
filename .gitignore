@@ -7,3 +7,6 @@ runs/
 data/phone_dump/
 data/raw/
 data/sheets/
+
+data/dataset/
+data/label_batches/
