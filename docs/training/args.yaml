@@ -10,10 +10,10 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: ''
+device: ""
 workers: 8
 project: runs
-name: tray_v1
+name: tray_v2
 exist_ok: false
 pretrained: true
 cls_remap: true
@@ -111,4 +111,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: /content/runs/detect/runs/tray_v1
+save_dir: /content/runs/detect/runs/tray_v2

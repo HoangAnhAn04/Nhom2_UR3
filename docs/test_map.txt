@@ -1,22 +1,23 @@
 ﻿Ultralytics 8.4.189  Python-3.12.0 torch-2.14.1+cpu CPU (13th Gen Intel Core i7-13700H)
 Model summary (fused): 73 layers, 3,133,193 parameters, 0 gradients, 8.6 GFLOPs
-[34m[1mval: [0mFast image access  (ping: 0.0┬▒0.0 ms, read: 921.1┬▒179.8 MB/s, size: 57.4 KB)
+[34m[1mval: [0mFast image access  (ping: 0.0┬▒0.0 ms, read: 556.8┬▒113.2 MB/s, size: 56.7 KB)
 
-[K[34m[1mval: [0mScanning C:\Users\Tran Hai Nam\Documents\HK9\RBCN\BTL\Nhom2_UR3\data\dataset\labels\test... 51 images, 3 backgrounds, 0 corrupt: 100% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 51/51 1.7Kit/s 0.0s
+[K[34m[1mval: [0mScanning C:\Users\Tran Hai Nam\Documents\HK9\RBCN\BTL\Nhom2_UR3\data\dataset\labels\test... 69 images, 3 backgrounds, 0 corrupt: 100% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 69/69 1.7Kit/s 0.0s
 [34m[1mval: [0mNew cache created: C:\Users\Tran Hai Nam\Documents\HK9\RBCN\BTL\Nhom2_UR3\data\dataset\labels\test.cache
 
-[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 25% ΓöüΓöüΓöüΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ 1/4 2.4s/it 0.7s<7.1s
-[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% ΓöüΓöüΓöüΓöüΓöüΓöüΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ 2/4 1.4s/it 1.4s<2.7s
-[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 75% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöÇΓöÇΓöÇ 3/4 1.1s/it 2.1s<1.1s
-[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 4/4 1.8it/s 2.3s
-                   all         51        162      0.958      0.988      0.993      0.866
-                     A         45         84      0.884      0.964      0.989      0.846
-                     B         39         39      0.998          1      0.995      0.889
-                     C         39         39      0.993          1      0.995      0.862
-Speed: 1.6ms preprocess, 38.3ms inference, 0.0ms loss, 0.4ms postprocess per image
-Results saved to [1mC:\Users\Tran Hai Nam\Documents\HK9\RBCN\BTL\Nhom2_UR3\runs\detect\val[0m
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 20% ΓöüΓöüΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ 1/5 2.2s/it 0.7s<8.7s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 40% ΓöüΓöüΓöüΓöüΓò╕ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ 2/5 1.2s/it 1.3s<3.7s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 60% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöÇΓöÇΓöÇΓöÇΓöÇ 3/5 1.1it/s 1.9s<1.9s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 80% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓò╕ΓöÇΓöÇ 4/5 1.2it/s 2.5s<0.8s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöüΓöü 5/5 1.8it/s 2.7s
+                   all         69        243      0.996          1      0.995      0.833
+                     A         63        126      0.999          1      0.995      0.819
+                     B         63         63      0.995          1      0.995      0.876
+                     C         54         54      0.993          1      0.995      0.805
+Speed: 0.7ms preprocess, 34.9ms inference, 0.0ms loss, 0.2ms postprocess per image
+Results saved to [1mC:\Users\Tran Hai Nam\Documents\HK9\RBCN\BTL\Nhom2_UR3\runs\detect\val-2[0m
 
-Tß║¡p test: mAP50=0.993  mAP50-95=0.866  P=0.958  R=0.988
-  A: P=0.884  R=0.964  AP50=0.989  AP50-95=0.846
-  B: P=0.998  R=1.000  AP50=0.995  AP50-95=0.889
-  C: P=0.993  R=1.000  AP50=0.995  AP50-95=0.862
+Tß║¡p test: mAP50=0.995  mAP50-95=0.833  P=0.996  R=1.000
+  A: P=0.999  R=1.000  AP50=0.995  AP50-95=0.819
+  B: P=0.995  R=1.000  AP50=0.995  AP50-95=0.876
+  C: P=0.993  R=1.000  AP50=0.995  AP50-95=0.805

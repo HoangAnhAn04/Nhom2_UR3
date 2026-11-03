@@ -1,15 +1,27 @@
 ﻿
-Tß║¡p test
-  che      ─æ├║ng   3 / sai   6
-  du       ─æ├║ng   3 / sai   0
-  du_vat   ─æ├║ng   9 / sai   0
-  sai_o    ─æ├║ng   6 / sai   0
-  thieu    ─æ├║ng  24 / sai   0
+Tß║¡p test, conf_min=0.5, 69 ß║únh
+  ─É├║ng lß╗çnh (status+lß╗¢p+├┤): 64/69 = 92.8%
+  ─É├║ng trß║íng th├íi khay:     67/69 = 97.1%
+  Khay thiß║┐u/sai bß╗ï nhß║¡n nhß║ºm l├á ─Éß╗ª: 0
+  Khay ─æß╗º bß╗ï tß╗½ chß╗æi nhß║ºm:           2
+  Tß╗òng sß╗æ ß║únh bß╗ï tß╗½ chß╗æi (status 2): 29
 
-Ca sai (6):
-   L069_1  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot2_unknown
-   L069_2  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot2_extra
-   L069_3  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot2_unknown
-   L083_1  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot1_extra
-   L083_2  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot1_extra
-   L083_3  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot1_unknown
+Confusion matrix (h├áng = mong ─æß╗úi, cß╗Öt = hß╗ç thß╗æng):
+                          ─æß╗º         thiß║┐u  sai/kh├┤ng r├╡
+            ─æß╗º            19             0             2
+         thiß║┐u             0            21             0
+  sai/kh├┤ng r├╡             0             0            27
+
+Theo condition:
+  che      ─æ├║ng   7 / sai   2
+  du       ─æ├║ng  12 / sai   0
+  du_vat   ─æ├║ng   9 / sai   0
+  sai_o    ─æ├║ng  18 / sai   0
+  thieu    ─æ├║ng  18 / sai   3
+
+Ca sai:
+  L013_1.jpg  thieu  dat_xoay_45  mong ─æß╗úi (1, 1, 2)  ─æ╞░ß╗úc (1, 1, 1)  
+  L013_2.jpg  thieu  dat_xoay_45  mong ─æß╗úi (1, 1, 2)  ─æ╞░ß╗úc (1, 1, 1)  
+  L013_3.jpg  thieu  dat_xoay_45  mong ─æß╗úi (1, 1, 2)  ─æ╞░ß╗úc (1, 1, 1)  
+  L075_2.jpg  che  che_A1_80;dat_lech_phai  mong ─æß╗úi (3, 0, 0)  ─æ╞░ß╗úc (2, 0, 0)  low_confidence;slot1_unknown
+  L075_3.jpg  che  che_A1_80;dat_lech_phai  mong ─æß╗úi (3, 0, 0)  ─æ╞░ß╗úc (2, 0, 0)  low_confidence;slot1_unknown
