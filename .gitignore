@@ -16,3 +16,4 @@ data/preview_*.jpg
 logs/*.csv
 tray_v1/
 tray_v2/
+data/smoke_seq/

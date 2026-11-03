@@ -1,22 +1,22 @@
 ﻿
-Tß║¡p val, conf_min=0.5, 69 ß║únh
-  ─É├║ng lß╗çnh (status+lß╗¢p+├┤): 69/69 = 100.0%
-  ─É├║ng trß║íng th├íi khay:     69/69 = 100.0%
-  Khay thiß║┐u/sai bß╗ï nhß║¡n nhß║ºm l├á ─Éß╗ª: 0
-  Khay ─æß╗º bß╗ï tß╗½ chß╗æi nhß║ºm:           0
-  Tß╗òng sß╗æ ß║únh bß╗ï tß╗½ chß╗æi (status 2): 27
+Tập val, conf_min=0.5, 69 ảnh
+  Đúng lệnh (status+lớp+ô): 69/69 = 100.0%
+  Đúng trạng thái khay:     69/69 = 100.0%
+  Khay thiếu/sai bị nhận nhầm là ĐỦ: 0
+  Khay đủ bị từ chối nhầm:           0
+  Tổng số ảnh bị từ chối (status 2): 27
 
-Confusion matrix (h├áng = mong ─æß╗úi, cß╗Öt = hß╗ç thß╗æng):
-                          ─æß╗º         thiß║┐u  sai/kh├┤ng r├╡
-            ─æß╗º            21             0             0
-         thiß║┐u             0            21             0
-  sai/kh├┤ng r├╡             0             0            27
+Confusion matrix (hàng = mong đợi, cột = hệ thống):
+                          đủ         thiếu  sai/không rõ
+            đủ            21             0             0
+         thiếu             0            21             0
+  sai/không rõ             0             0            27
 
 Theo condition:
-  che      ─æ├║ng   9 / sai   0
-  du       ─æ├║ng  12 / sai   0
-  du_vat   ─æ├║ng   9 / sai   0
-  sai_o    ─æ├║ng  18 / sai   0
-  thieu    ─æ├║ng  21 / sai   0
+  che      đúng   9 / sai   0
+  du       đúng  12 / sai   0
+  du_vat   đúng   9 / sai   0
+  sai_o    đúng  18 / sai   0
+  thieu    đúng  21 / sai   0
 
 Ca sai:
