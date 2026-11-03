@@ -15,3 +15,4 @@ data/errors_*/
 data/preview_*.jpg
 logs/*.csv
 tray_v1/
+tray_v2/
