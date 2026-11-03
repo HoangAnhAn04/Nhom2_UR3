@@ -3,7 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from check_tray import check_tray, load_config, compatible  # noqa: E402
+from check_tray import check_tray, load_config, compatible, slot_rects  # noqa: E402
 from tests.scenarios import make_at, build  # noqa: E402
 
 cfg = load_config()
@@ -47,7 +47,12 @@ def test_low_confidence_occluded():
 
 
 def test_between_slots():
-    r = check_tray([at("B", 3), at("A", 1, dx=160)], cfg)
+    # tâm vật nằm giữa khe ô 1 và ô 2, tính từ config nên không phụ thuộc tọa độ cố định
+    rects = slot_rects(cfg)
+    mid_x = (rects[1][2] + rects[2][0]) / 2.0
+    cy = (rects[1][1] + rects[1][3]) / 2.0
+    d = {"cls": "A", "box": [mid_x - 30, cy - 30, mid_x + 30, cy + 30], "conf": 0.9}
+    r = check_tray([at("B", 3), d], cfg)
     assert r["status"] == 2 and "between_slots" in r["reason"], r
 
 
