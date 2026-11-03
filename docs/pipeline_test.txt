@@ -1,0 +1,15 @@
+﻿
+Tß║¡p test
+  che      ─æ├║ng   3 / sai   6
+  du       ─æ├║ng   3 / sai   0
+  du_vat   ─æ├║ng   9 / sai   0
+  sai_o    ─æ├║ng   6 / sai   0
+  thieu    ─æ├║ng  24 / sai   0
+
+Ca sai (6):
+   L069_1  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot2_unknown
+   L069_2  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot2_extra
+   L069_3  che  che_A2_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot2_unknown
+   L083_1  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot1_extra
+   L083_2  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  slot1_extra
+   L083_3  che  che_A1_60;dat_xoay_45  (3, 0, 0)  (2, 0, 0)  low_confidence;slot1_unknown
