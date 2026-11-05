@@ -1,27 +1,24 @@
-﻿
-Tập test, conf_min=0.5, 69 ảnh
-  Đúng lệnh (status+lớp+ô): 64/69 = 92.8%
-  Đúng trạng thái khay:     67/69 = 97.1%
-  Khay thiếu/sai bị nhận nhầm là ĐỦ: 0
-  Khay đủ bị từ chối nhầm:           2
-  Tổng số ảnh bị từ chối (status 2): 29
 
-Confusion matrix (hàng = mong đợi, cột = hệ thống):
-                          đủ         thiếu  sai/không rõ
-            đủ            19             0             2
-         thiếu             0            21             0
-  sai/không rõ             0             0            27
+Táº­p test, conf_min=0.5, 69 áº£nh
+  ÄĂºng lá»‡nh (status+lá»›p+Ă´): 67/69 = 97.1%
+  ÄĂºng tráº¡ng thĂ¡i khay:     67/69 = 97.1%
+  Khay thiáº¿u/sai bá»‹ nháº­n nháº§m lĂ  Äá»¦: 0
+  Khay Ä‘á»§ bá»‹ tá»« chá»‘i nháº§m:           2
+  Tá»•ng sá»‘ áº£nh bá»‹ tá»« chá»‘i (status 2): 29
+
+Confusion matrix (hĂ ng = mong Ä‘á»£i, cá»™t = há»‡ thá»‘ng):
+                          Ä‘á»§         thiáº¿u  sai/khĂ´ng rĂµ
+            Ä‘á»§            19             0             2
+         thiáº¿u             0            21             0
+  sai/khĂ´ng rĂµ             0             0            27
 
 Theo condition:
-  che      đúng   7 / sai   2
-  du       đúng  12 / sai   0
-  du_vat   đúng   9 / sai   0
-  sai_o    đúng  18 / sai   0
-  thieu    đúng  18 / sai   3
+  che      Ä‘Ăºng   7 / sai   2
+  du       Ä‘Ăºng  12 / sai   0
+  du_vat   Ä‘Ăºng   9 / sai   0
+  sai_o    Ä‘Ăºng  18 / sai   0
+  thieu    Ä‘Ăºng  21 / sai   0
 
 Ca sai:
-  L013_1.jpg  thieu  dat_xoay_45  mong đợi (1, 1, 2)  được (1, 1, 1)  
-  L013_2.jpg  thieu  dat_xoay_45  mong đợi (1, 1, 2)  được (1, 1, 1)  
-  L013_3.jpg  thieu  dat_xoay_45  mong đợi (1, 1, 2)  được (1, 1, 1)  
-  L075_2.jpg  che  che_A1_80;dat_lech_phai  mong đợi (3, 0, 0)  được (2, 0, 0)  low_confidence;slot1_unknown
-  L075_3.jpg  che  che_A1_80;dat_lech_phai  mong đợi (3, 0, 0)  được (2, 0, 0)  low_confidence;slot1_unknown
+  L075_2.jpg  che  che_A1_80;dat_lech_phai  mong Ä‘á»£i (3, 0, 0)  Ä‘Æ°á»£c (2, 0, 0)  low_confidence;slot1_unknown
+  L075_3.jpg  che  che_A1_80;dat_lech_phai  mong Ä‘á»£i (3, 0, 0)  Ä‘Æ°á»£c (2, 0, 0)  low_confidence;slot1_unknown
