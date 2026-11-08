@@ -116,8 +116,10 @@ class Session:
 
     # ---- RESET ----
     def handle_reset(self, id_):
-        self.log.log("RESET", id_, detail=f"xóa pending={self.pending}")
+        self.log.log("RESET", id_, detail=f"phiên mới: bỏ pending={self.pending}, xóa {len(self.cache)} id đã trả, {len(self.done)} id đã DONE")
         self.pending = None
+        self.cache.clear()
+        self.done.clear()
         return fmt(id_, 0, 0, 0.0, 0)
 
     def handle_line(self, text):
