@@ -1,0 +1,5 @@
+time,event,id,source,prediction,command,detail
+2026-11-25T10:23:19.483,CONNECT,,,,,"('192.168.248.128', 59486)"
+2026-11-25T10:23:25.304,GET,1,step00.jpg,"{1: 'ok', 2: 'ok', 3: 'ok', 4: 'ok'}","(1,3,0,0,0,0,0.91,0)",
+2026-11-25T10:23:25.312,DONE,1,,,,"khay hoàn tất, tổng khay = 1"
+2026-11-25T10:24:08.089,DISCONNECT,,,,,giữ nguyên trạng thái phiên

@@ -1,0 +1,8 @@
+time,event,id,source,prediction,command,detail
+2026-11-25T10:19:30.984,CONNECT,,,,,"('192.168.248.128', 59273)"
+2026-11-25T10:19:36.847,GET,1,step00.jpg,"{1: 'ok', 2: 'ok', 3: 'ok', 4: 'empty'}","(1,1,3,0,0,0,0.85,4)",
+2026-11-25T10:19:43.714,DONE,1,,,class=3 slot=4,
+2026-11-25T10:19:43.971,GET,2,step01.jpg,"{1: 'ok', 2: 'ok', 3: 'ok', 4: 'ok'}","(2,3,0,0,0,0,0.91,0)",
+2026-11-25T10:19:43.972,DONE,2,,,,"khay hoàn tất, tổng khay = 1"
+2026-11-25T10:20:07.539,CONN_ERROR,,,,,[WinError 10054] An existing connection was forcibly closed by the remote host
+2026-11-25T10:20:07.540,DISCONNECT,,,,,giữ nguyên trạng thái phiên
